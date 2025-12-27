@@ -1,0 +1,9 @@
+(library
+ (public_name advent-of-hardcaml)
+ (libraries core hardcaml hardcaml_waveterm)
+ (inline_tests
+  (deps
+   (glob_files "../inputs/*")))
+ (preprocess
+  (pps ppx_jane ppx_hardcaml))
+ (name advent_of_hardcaml))
